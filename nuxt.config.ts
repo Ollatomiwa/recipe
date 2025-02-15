@@ -16,6 +16,8 @@ export default defineNuxtConfig({
       },
     },
   },
+
+ 
   unhead: {
     renderSSRHeadOptions: {
       omitLineBreaks: false,
