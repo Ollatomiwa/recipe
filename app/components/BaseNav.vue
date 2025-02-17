@@ -24,7 +24,7 @@
               <a href="/about" class="flex items-center">About</a>
             </li>
             <li class="flex items-center p-1 text-sm gap-x-2 text-slate-900 font-bold">
-              <a href="#" class="flex items-center">Recipes</a>
+              <a href="#recipe" class="flex items-center">Recipes</a>
             </li>
             <li class="flex items-center p-1 text-sm gap-x-2 text-slate-900 font-bold">
               <a href="#" class="flex items-center">Contact</a>

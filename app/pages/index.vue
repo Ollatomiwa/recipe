@@ -3,6 +3,7 @@ import { type RecipeResponse } from "../../types/types";
 const { data, error } = await useFetch<RecipeResponse>(
   "https://dummyjson.com/recipes?limit=12"
 );
+
 </script>
 <template>
   <div>
@@ -35,12 +36,12 @@ const { data, error } = await useFetch<RecipeResponse>(
           </div>
         </div>
       </section>
-      <section class="py-20 container">
+      <section class="py-20 container" id="recipe">
         <h2 class="text-3xl lg:text-5xl mb-2">Discover, Prepare and Share</h2>
         <p class="text-lg lg:text-xl mb-8">
           Check out our most popular recipes
         </p>
-        <div
+        <div v-if="!error"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4"
         >
           <div
@@ -85,6 +86,7 @@ const { data, error } = await useFetch<RecipeResponse>(
             </div>
           </div>
         </div>
+        <p v-else class="text-xl">Oops, something went wrong, Please try again later</p>
       </section>
     </main>
   </div>
