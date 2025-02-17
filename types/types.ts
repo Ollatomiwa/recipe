@@ -24,6 +24,7 @@ export interface Recipe {
     userId: number;
     rating: number;
     reviewCount: number;
+    caloriesPerServing : number;
 
 }
 
