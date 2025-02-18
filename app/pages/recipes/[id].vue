@@ -1,4 +1,4 @@
-<script setup lang="ts">
+    <script setup lang="ts">
 import { type Recipe} from '../../../types/types';
 const { id } = useRoute().params;
 
@@ -13,6 +13,18 @@ if (error.value) {
     })
 }
 
+useSeoMeta({
+    title: data.value?.name,
+    description: "Recipes for you to learn",
+    ogTitle: data.value?.name,
+    ogDescription: "Recipes for you to learn",
+    ogImage: data.value?.image,
+    ogUrl: `localhost:3000/recipes/${data.value?.id}`,
+    twitterTitle: data.value?.name,
+    twitterDescription: "Recipes for you to learn",
+    twitterImage :data.value?.image,
+    twitterCard: "summary",
+})
 
 </script>
 <template>
