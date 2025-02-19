@@ -60,6 +60,41 @@ useSeoMeta({
         </div>
         <p v-else class="text-xl">Oops, something went wrong, Please try again later</p>
       </section>
+      <hr/>
+     <About/>
+     <hr/>
+     <Contact/>
+     <hr/>
     </main>
+    
   </div>
+  <!-- ====== footer ====== -->
+
+<footer class="bg-slate-50/80 pt-16">
+    <div class="mx-auto max-w-7xl px-8 md:px-6">
+
+        <!-- End footer top -->
+
+        <!-- footer bottom -->
+        <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+            <p class="text-md sm:text-sm font-semibold text-dodgeroll-gold">© Copyright 2025 <a href="#" class=""> COMPUTCIPES.</a> All rights reserved.</p>
+            <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                <a href="#">
+                    <ion-icon name="logo-facebook" class="text-2xl text-dodgeroll-gold hover:text-blue-500 duration-300"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter" class="text-2xl text-dodgeroll-gold hover:text-blue-500 duration-300"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-youtube" class="text-2xl text-dodgeroll-gold hover:text-blue-500 duration-300"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- End footer bottom -->
+
+    </div>
+</footer>
+
+<!-- ====== END footer ====== -->
+
 </template>
